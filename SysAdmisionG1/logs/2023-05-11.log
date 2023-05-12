@@ -1,0 +1,18 @@
+may. 11, 2023 7:35:35 A. M. pe.edu.upeu.app.util.ErrorLogger log
+SEVERE: pe.edu.upeu.app.dao.PreguntasDao.delete
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: pregunta)
+	at org.sqlite.core.DB.newSQLException(DB.java:1141)
+	at org.sqlite.core.DB.newSQLException(DB.java:1152)
+	at org.sqlite.core.DB.throwex(DB.java:1112)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:117)
+	at org.sqlite.core.DB.prepare(DB.java:267)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:44)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:34)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:155)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:135)
+	at pe.edu.upeu.app.dao.PreguntasDao.delete(PreguntasDao.java:108)
+	at pe.edu.upeu.app.dao.PreguntasDao.main(PreguntasDao.java:157)
+
